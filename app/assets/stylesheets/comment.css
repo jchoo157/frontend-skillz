@@ -1,8 +1,24 @@
 #comments {
   display: inline-block;
-  width: 300px;
+  min-width: 300px;
+  max-width: 700px;
   margin: 20px;
   text-align: center;
+}
+
+.h1-comments {
+  width: 300px;
+  font-size: 50px;
+  color: #fff9f9;
+  padding: 10px;
+  border-radius: 5px;
+  text-shadow: 2px 2px #ddd9d9;
+
+}
+
+.h1-comments:hover {
+  text-shadow: 4px 4px #af9483;
+  color: white;
 }
 
 .h2comments {
@@ -32,6 +48,7 @@
 }
 
 .comment-body {
+  color: #212121;
   box-shadow:         1px 1px 2px 2px #d3d3d3;
   text-align: left;
   min-height: 76px;
@@ -39,9 +56,14 @@
   border-radius: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-left: 40px;
+  padding-right: 10px;
+  padding-left: 45px;
   background-color: #f2f2f2;
   word-wrap: break-word;
+}
+
+#comments-section {
+
 }
 
 .float-left {
@@ -67,5 +89,5 @@
   margin-left: 5px;
   margin-right: 5px;
   margin-bottom: -1px;
-  background-color: #4f4f4f;
+  background-color: #636363;
 }

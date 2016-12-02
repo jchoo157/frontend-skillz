@@ -3,6 +3,35 @@
   height: 500px;
 }
 
+.jchoo {
+  border-radius: 48%;
+  opacity: 0.9;
+}
+
+.jchoo:hover {
+  box-shadow: 5px 5px 5px #636d13;
+  opacity: 0.9;
+}
+
+.light-blue{
+  color: #d0d9ea;
+}
+
+.ruda {
+  font-family: 'Ruda', sans-serif;"
+}
+
+.homeSlide {
+  border-bottom-width: 2px solid #f51c40;
+}
+
+.x {
+  display: inline-block;
+}
+
+.m {
+  font-family: 'Marcellus', serif;
+}
 /* CSS */
 .hsContainer {
     display: table;
@@ -13,11 +42,24 @@
     position: relative;
     opacity: 1;
 }
+
+.hsContent > h2 {
+  font-size: 50px;
+}
+
+.hsContent > h3 {
+  font-size: 30px;
+}
+
+.hsContent > h5 {
+  font-size: 20px;
+}
+
 .hsContent {
     max-width: 450px;
     display: table-cell;
     vertical-align: bottom;
-    color: #ebebeb;
+    color: #282828;
     padding: 0 8%;
     text-align: center
 }
@@ -29,12 +71,57 @@
     height: 100%;
     width: 100%;
 }
+
+
+.fs {
+  background-color: #eaeaea;
+  padding: 5px;
+  color: #1e1e1e;
+  border-radius: 5px;
+  opacity: 0.7;
+}
+
+.fs:hover {
+  background-color: #fc8749;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  opacity: 0.7;
+  box-shadow: 5px 5px 5px #1c1110;;
+  border: 5px solid #ff5900;
+}
+
+.wd {
+  background-color: #262626;
+  border-radius: 5px;
+  color: white;
+  padding: 5px;
+  opacity: 0.7;
+
+}
+
+.wd:hover {
+  background-color: #fc8749;
+  border: 5px solid #ff5900;
+  padding: 5px;
+  color: black;
+  border-radius: 5px;
+  opacity: 0.7;
+  box-shadow: 5px 5px 5px #1c1110;;
+
+}
+
+
 /* Slide 1 */
 #slide-1 .bcg {
-  opacity: 0.9;
-  background-image:url('landscape.jpg');
-  margin-top: -20px;
-  height: 500px;
+  height:100vh;
+    width: 100%;
+  background-image: url('road.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 

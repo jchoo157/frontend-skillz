@@ -1,9 +1,14 @@
 <section id="slide-1" class="homeSlide">
     <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
       <div class="hsContainer">
-      <div class="hsContent" data-top="opacity: 1" data--100-top="opacity: 0" data-anchor-target="#slide-1 h2">
-        <h2 style="font-family: 'Ruda', sans-serif;">Welcome<br />Frontend Skillz!</h2>
-        <p>Checkout my cool site everyone.</p>
+      <div class="hsContent" data-300-top="opacity: 1" data--200-top="opacity: 0" data-anchor-target="#slide-1 h2">
+
+
+        <%= image_tag('jchoo.png', class: 'jchoo') %>
+        <h2 class="slab" style="color: #f2f2f2">Johnny <span style="color: #fdffa8">Choo</span></h2><br>
+        <h3 class="m"><span class="fs">Full Stack</span> <span class="wd">Web Developer</span></h3>
+        <br>
+        <h5 class="light-blue maven">I have a passion for web development and always <br>eager to work on new projects and learn new technologies</h5>
         <div class="contentDiv">
         <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" />
       </div>
@@ -14,35 +19,80 @@
 
 <center>
 
-<div id="modal-section">
-  <div id="skill-modal">
-    <center><h1 class="maven">Modal</h1></center>
-    <center><div id="">
-      <%= image_tag('ruby.jpg', id: "myImg", class: 'ruby') %>
-    </div></center>
-
-    <div id="myModal" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img01">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption"></div>
-    </div>
-
+<div class="content">
+  <h1 class="maven h1-projects">Projects</h1>
+  <div class="grid">
+    
+    <figure class="effect-lily">
+      <%= link_to image_tag('guideme.png'), 'https://guideme-2016.herokuapp.com' %>
+      <figcaption>
+        <div class="bg">
+          <h2>Guide <span>Me</span></h2>
+          <p>Find a guide in the next city you visit</p>
+        </div>
+        <a href="https://guideme-2016.herokuapp.com" target="_blank">View more</a>
+      </figcaption>     
+    </figure>
   </div>
-</div>
 
-<div id="projects">
-  
+  <div class="grid">
+    <figure class="effect-lily">
+      <%= link_to image_tag('art-gallery.png'), 'https://choo-art-gallery.herokuapp.com' %>
+      <figcaption>
+        <div>
+          <h2>Art <span>Gallery</span></h2>
+          <p>View artwork I've done in the past</p>
+        </div>
+        <a href="https://choo-art-gallery.herokuapp.com" target="_blank">View more</a>
+      </figcaption>     
+    </figure>
+  </div>
+
+  <div class="grid">
+    
+    <figure class="effect-lily">
+      <%= link_to image_tag('veggiemon.png'), 'https://veggiemongrow2016.herokuapp.com' %>
+      <figcaption>
+        <div>
+          <h2>Veggiemon <span>Grow</span></h2>
+          <p>Capture and battle Veggiemon</p>
+        </div>
+        <a href="https://veggiemongrow2016.herokuapp.com" target="_blank">View more</a>
+      </figcaption>     
+    </figure>
+  </div>
+
+  <div class="grid">
+    
+    <figure class="effect-lily">
+      <%= image_tag('rainyday.png') %>
+      <figcaption>
+        <div>
+          <h2>Rainy Day <span>Science</span></h2>
+          <p>Find house hold items to build fun experiments</p>
+        </div>
+        <a href="https://rainy-day-science.herokuapp.com" target="_blank">View more</a>
+      </figcaption>     
+    </figure>
+  </div>
+  <div class="grid">
+    
+    <figure class="effect-lily">
+      <%= link_to image_tag('labhub.png'), 'https://labhub-2016.herokuapp.com' %>
+      <figcaption>
+        <div>
+          <h2>Lab <span>hub</span></h2>
+          <p>Propose ideas and collaborate on experiments</p>
+        </div>
+        <a href="https://labhub-2016.herokuapp.com" target="_blank">View more</a>
+      </figcaption>     
+    </figure>
+  </div>
 </div>
 
 <div id="comments-section">
   <div id="comments">
-    <center><h1 class="maven">Comments</h1></center>
+    <center><h1 class="maven h1-comments">Comments</h1></center>
     <div class="comments-container">
       <% @comments.reverse.each do |comment| %>
         <%= render partial: 'partials/comment', locals: {comment: comment} %>
@@ -64,15 +114,34 @@
 
   <div class="parallax"></div> -->
 
-<div id="google-section">
-  <div class="googlemaps">
-    <h1 class="maven">Google Maps</h1>
-    <div id="map"></div>
+
       <script async defer
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6Qzx2V2E7j-ZO4VBo8GKWppauk6osYuw&callback=initMap">
       </script>
-  </div>
-</div>
+
+      <div id="modal-section">
+        <div id="skill-modal">
+          <center><div id="">
+            <%= image_tag('ruby.jpg', id: "myImg", class: 'ruby') %>
+          </div></center>
+
+          <div id="myModal" class="modal">
+
+            <!-- The Close Button -->
+            <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="img01">
+
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+          </div>
+
+        </div>
+      </div>
+
+      <center><div id="map"></div></center>
+
 
 
 
