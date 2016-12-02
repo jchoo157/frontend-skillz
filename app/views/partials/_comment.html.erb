@@ -1,6 +1,8 @@
-  <%= render partial: 'partials/vote', locals: {comment: comment} %>     
-  <%= comment.body %>
-</p>
-<p>
-  <%= link_to 'delete', comment_path(comment), class: 'delete-comment', method: :delete %>
-</p>
+<div class="a-comment">
+    <%= render partial: 'partials/vote', locals: {comment: comment} %>     
+    <%= comment.body %>
+  </p>
+  <p>
+    <%= link_to 'delete', comment_path(comment), class: 'delete-comment', method: :delete, remote: true %>
+  </p>
+</div>

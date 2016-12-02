@@ -25,9 +25,14 @@ class CommentsController < ApplicationController
 
   def destroy
     @comment = Comment.find(params[:id])
-    @comment.votes.destroy_all
-    @comment.destroy
-    redirect_to root_path
+    if @comment.votes.destroy_all && @comment.destroy
+      if request.xhr?
+        @comment.votes.destroy_all
+        @comment.destroy
+      else
+        redirect_to root_path
+      end
+    end
   end
 
   private

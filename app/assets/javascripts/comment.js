@@ -21,19 +21,21 @@ function createComment() {
       $('#comments').prepend(result);
     });
   });
-}
+};
 
 function deleteComment() {
   $('#comments').on('click', '.delete-comment', function(e) {
     e.preventDefault();
     var action = $(this).attr('href');
-    var method = $(this).attr('method');
+    var method = $(this).attr('data-method');
+    var that = this;
+    console.log('dfasdfj;alsdfj')
     $.ajax({
       method: method,
       url: action
     })
     .done(function(result) {
-      
+      $(that).parent().parent().remove();
     });
-  })
-}
+  });
+};
