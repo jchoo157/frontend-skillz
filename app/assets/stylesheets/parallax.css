@@ -15,7 +15,6 @@
 }
 .hsContent {
     max-width: 450px;
-    margin: -150px auto 0 auto;
     display: table-cell;
     vertical-align: middle;
     color: #ebebeb;
@@ -32,8 +31,8 @@
 }
 /* Slide 1 */
 #slide-1 .bcg {
-  background-image:url('landscape.jpg');
-  height: 700px;
+  margin-top: -20px;
+  height: 500px;
 }
 
 #third {
