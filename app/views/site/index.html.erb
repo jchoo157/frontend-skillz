@@ -1,9 +1,13 @@
-<h1>Frontend Skillz</h1>
+<center><h1 class="maven">Frontend Skillz</h1></center>
 
 <div id="comments">
-  <% @comments.reverse.each do |comment| %>
+  <% @comments.each do |comment| %>
     <%= render partial: 'partials/comment', locals: {comment: comment} %>
   <% end %>
-  <h3>Say something</h3>
     <%= render partial: 'partials/form', locals: {comment: @comment} %>
 </div>
+
+<div id="skill-modal">
+  
+</div>
+

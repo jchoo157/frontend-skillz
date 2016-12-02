@@ -18,7 +18,6 @@ function upvote() {
     })
     .done(function(result) {
       var points = $(result).children('.points');
-      console.log(points)
       $(that).parent().parent().find('.points').replaceWith(points);
     });
   });

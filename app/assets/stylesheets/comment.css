@@ -1,4 +1,42 @@
 #comments {
-  border: 1px solid black;
+  border: 1px solid #828282;
   width: 200px;
+  margin: 20px;
+}
+
+.maven {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.comment {
+  text-align: center;
+  font-family: 'Maven Pro', sans-serif;
+}
+
+.a-comment {
+  padding: 5px;
+}
+
+.comment-body {
+  margin: 5px;
+  border-radius: 5px;
+  padding: 5px;
+  clear: both;
+  background-color: #efefef;
+  word-wrap: break-word;
+}
+
+.upvote {
+  float: left;
+}
+
+.downvote {
+  float: left;
+}
+
+.points {
+  margin-top: 5px;
+  padding-left: 5px;
+  padding-right: 5px;
+  float: left;
 }
