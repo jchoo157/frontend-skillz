@@ -14,19 +14,6 @@
 
 <center>
 
-
-<div id="comments-section">
-  <div id="comments">
-    <center><h1 class="maven">Comments</h1></center>
-    <div class="comments-container">
-      <% @comments.reverse.each do |comment| %>
-        <%= render partial: 'partials/comment', locals: {comment: comment} %>
-      <% end %>
-        <%= render partial: 'partials/form', locals: {comment: @comment} %>
-      </div>
-  </div>
-</div>
-
 <div id="modal-section">
   <div id="skill-modal">
     <center><h1 class="maven">Modal</h1></center>
@@ -46,6 +33,22 @@
       <div id="caption"></div>
     </div>
 
+  </div>
+</div>
+
+<div id="projects">
+  
+</div>
+
+<div id="comments-section">
+  <div id="comments">
+    <center><h1 class="maven">Comments</h1></center>
+    <div class="comments-container">
+      <% @comments.reverse.each do |comment| %>
+        <%= render partial: 'partials/comment', locals: {comment: comment} %>
+      <% end %>
+        <%= render partial: 'partials/form', locals: {comment: @comment} %>
+      </div>
   </div>
 </div>
 
