@@ -2,9 +2,11 @@
     <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
       <div class="hsContainer">
       <div class="hsContent" data-300-top="opacity: 1" data--200-top="opacity: 0" data-anchor-target="#slide-1 h2">
-        <h2 class="maven" style="color: #fdffa8">Johnny <span style="color: #c9f9ff">Choo</span></h2>
-        <h3 class="slab" style="color: #feffd8">Full Stack <span style="color: #e0fbff">Web Developer</span></h3>
-        <h5 class="light-blue">I have a passion for web development and will continue <br>learning and challenging myself in order to be an asset to any team</h5>
+        <%= image_tag('jchoo.png', class: 'jchoo') %>
+        <h2 class="slab" style="color: #f2f2f2">Johnny <span style="color: #fdffa8">Choo</span></h2><br>
+        <h3 class="m"><span class="fs">Full Stack</span> <span class="wd">Web Developer</span></h3>
+        <br>
+        <h5 class="light-blue maven">I have a passion for web development and always <br>eager to work on new projects and learn new technologies</h5>
         <div class="contentDiv">
         <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" />
       </div>
@@ -15,34 +17,12 @@
 
 <center>
 
-<div id="modal-section">
-  <div id="skill-modal">
-    <center><h1 class="maven">Modal</h1></center>
-    <center><div id="">
-      <%= image_tag('ruby.jpg', id: "myImg", class: 'ruby') %>
-    </div></center>
-
-    <div id="myModal" class="modal">
-
-      <!-- The Close Button -->
-      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
-
-      <!-- Modal Content (The Image) -->
-      <img class="modal-content" id="img01">
-
-      <!-- Modal Caption (Image Text) -->
-      <div id="caption"></div>
-    </div>
-
-  </div>
-</div>
-
 <div class="content">
-  <h1 class="maven" style="color: #632828">Projects</h1>
+  <h1 class="maven h1-projects" style="color: #ccbaaf">Projects</h1>
   <div class="grid">
     
     <figure class="effect-lily">
-      <%= image_tag('guideme.png') %>
+      <%= link_to image_tag('guideme.png'), 'https://guideme-2016.herokuapp.com' %>
       <figcaption>
         <div class="bg">
           <h2>Guide <span>Me</span></h2>
@@ -55,7 +35,7 @@
 
   <div class="grid">
     <figure class="effect-lily">
-      <%= image_tag('art-gallery.png') %>
+      <%= link_to image_tag('art-gallery.png'), 'https://choo-art-gallery.herokuapp.com' %>
       <figcaption>
         <div>
           <h2>Art <span>Gallery</span></h2>
@@ -69,7 +49,7 @@
   <div class="grid">
     
     <figure class="effect-lily">
-      <%= image_tag('veggiemon.png') %>
+      <%= link_to image_tag('veggiemon.png'), 'https://veggiemongrow2016.herokuapp.com' %>
       <figcaption>
         <div>
           <h2>Veggiemon <span>Grow</span></h2>
@@ -96,7 +76,7 @@
   <div class="grid">
     
     <figure class="effect-lily">
-      <%= image_tag('labhub.png') %>
+      <%= link_to image_tag('labhub.png'), 'https://labhub' %>
       <figcaption>
         <div>
           <h2>Lab <span>hub</span></h2>
@@ -131,6 +111,27 @@
   </div>
 
   <div class="parallax"></div> -->
+<div id="modal-section">
+  <div id="skill-modal">
+    <center><h1 class="maven">Modal</h1></center>
+    <center><div id="">
+      <%= image_tag('ruby.jpg', id: "myImg", class: 'ruby') %>
+    </div></center>
+
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+  </div>
+</div>
 
 <div id="google-section">
   <div class="googlemaps">
