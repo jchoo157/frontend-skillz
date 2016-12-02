@@ -17,7 +17,8 @@ function createComment() {
       data: data
     })
     .done(function(result) {
-      $('#comments').prepend(result);
+      $('.comments-container').prepend(result);
+      $('#comments').trigger('reset')
     });
   });
 };

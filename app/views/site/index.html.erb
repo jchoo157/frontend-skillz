@@ -1,13 +1,81 @@
-<center><h1 class="maven">Frontend Skillz</h1></center>
+<section id="slide-1" class="homeSlide">
+    <div class="bcg" data-center="background-position: 50% 0px;" data-top-bottom="background-position: 50% -100px;" data-anchor-target="#slide-1">
+      <div class="hsContainer">
+      <div class="hsContent" data-top="opacity: 1" data--100-top="opacity: 0" data-anchor-target="#slide-1 h2">
+        <h2 style="font-family: 'Ruda', sans-serif;">Welcome<br />Frontend Skillz!</h2>
+        <p>Checkout my cool site everyone.</p>
+        <div class="contentDiv">
+        <img class="arrow" src="https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png" />
+      </div>
+      </div>
+    </div>
+</div>
+</section>
 
-<div id="comments">
-  <% @comments.each do |comment| %>
-    <%= render partial: 'partials/comment', locals: {comment: comment} %>
-  <% end %>
-    <%= render partial: 'partials/form', locals: {comment: @comment} %>
+<center>
+
+<div id="modal-section">
+  <div id="skill-modal">
+    <center><h1 class="maven">Modal</h1></center>
+    <center><div id="">
+      <%= image_tag('ruby.jpg', id: "myImg", class: 'ruby') %>
+    </div></center>
+
+    <div id="myModal" class="modal">
+
+      <!-- The Close Button -->
+      <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+      <!-- Modal Content (The Image) -->
+      <img class="modal-content" id="img01">
+
+      <!-- Modal Caption (Image Text) -->
+      <div id="caption"></div>
+    </div>
+
+  </div>
 </div>
 
-<div id="skill-modal">
+<div id="projects">
   
 </div>
 
+<div id="comments-section">
+  <div id="comments">
+    <center><h1 class="maven">Comments</h1></center>
+    <div class="comments-container">
+      <% @comments.reverse.each do |comment| %>
+        <%= render partial: 'partials/comment', locals: {comment: comment} %>
+      <% end %>
+        <%= render partial: 'partials/form', locals: {comment: @comment} %>
+      </div>
+  </div>
+</div>
+
+<!-- 
+  <div class="parallax"></div>
+
+
+  <div style="height:500px;background-color:#b1d4d6;font-size:36px">
+  Scroll Up and Down this page to see the parallax scrolling effect.
+  This div is just here to enable scrolling.
+  Tip: Try to remove the background-attachment property to remove the scrolling effect.
+  </div>
+
+  <div class="parallax"></div> -->
+
+<div id="google-section">
+  <div class="googlemaps">
+    <h1 class="maven">Google Maps</h1>
+    <div id="map"></div>
+      <script async defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD6Qzx2V2E7j-ZO4VBo8GKWppauk6osYuw&callback=initMap">
+      </script>
+  </div>
+</div>
+
+
+
+
+
+</center>
