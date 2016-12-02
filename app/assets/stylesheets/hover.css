@@ -13,8 +13,12 @@
   /*background-color: black;*/
 }
 
+.slab {
+  font-family: 'Arbutus Slab', serif;
+}
+
 .content {
-  background-color: #e5e5e5;
+  background-color: #f7ebe3;
 }
 
 .content > div {
@@ -119,6 +123,10 @@
 /***** Lily *****/
 /*---------------*/
 
+figure.effect-lily:hover {
+  box-shadow: 5px 5px 5px #888888;;
+}
+
 figure.effect-lily img {
   max-width: none;
   width: -webkit-calc(100% + 50px);
@@ -172,14 +180,17 @@ figure.effect-lily:hover p {
   text-shadow: 0px 0px #352c2c;
   background-color: white; 
   box-shadow: 2px 2px 5px 2px #353535;
-  opacity: 0.7;
   display: inline-block;
   color: black;
   -webkit-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+figure.effect-lily:hover h2 {
+  opacity: 0.7;
+}
 
 figure.effect-lily:hover p {
+  opacity: 0.8;
   -webkit-transition-delay: 0.05s;
   transition-delay: 0.05s;
   -webkit-transition-duration: 0.35s;

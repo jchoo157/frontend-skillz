@@ -3,6 +3,20 @@
   height: 500px;
 }
 
+.jchoo {
+  border-radius: 20px;
+  opacity: 0.9;
+  border: 9px solid #4F3B36;
+}
+
+.light-blue{
+  color: #d0d9ea;
+}
+
+.ruda {
+  font-family: 'Ruda', sans-serif;"
+}
+
 .homeSlide {
   border-bottom-width: 2px solid #f51c40;
 }
@@ -21,7 +35,7 @@
     max-width: 450px;
     display: table-cell;
     vertical-align: bottom;
-    color: black;
+    color: #282828;
     padding: 0 8%;
     text-align: center
 }
@@ -33,11 +47,18 @@
     height: 100%;
     width: 100%;
 }
+
+
 /* Slide 1 */
 #slide-1 .bcg {
-  opacity: 0.9;
-  margin-top: -20px;
-  height: 500px;
+  height:100vh;
+    width: 100%;
+  background-image: url('road.jpg');
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    position: relative;
 }
 
 
