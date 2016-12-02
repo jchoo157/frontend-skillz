@@ -9,7 +9,11 @@ class CommentsController < ApplicationController
   def create
     @comment = Comment.new(comment_params)
     if @comment.save
-      redirect_to root_path
+      if request.xhr?
+        render partial: 'partials/comment', locals: {comment: @comment}, layout: false
+      else
+        redirect_to root_path
+      end
     end
   end
 
@@ -20,6 +24,10 @@ class CommentsController < ApplicationController
   end
 
   def destroy
+    @comment = Comment.find(params[:id])
+    @comment.votes.destroy_all
+    @comment.destroy
+    redirect_to root_path
   end
 
   private

@@ -1,0 +1,14 @@
+<div class="vote">
+    <p class="points"><%= comment.votes.reduce(0) {|total, vote| vote.vote_type == "upvote" ? total + 1 : total - 1} %>
+
+    <%= form_for Vote.new, url: comment_votes_path(comment) do |f| %>
+        <%= f.hidden_field :vote_type, value: "upvote" %>
+
+        <%= f.submit 'upvote', class: 'upvote'%>
+    <% end %>
+    <%= form_for Vote.new, url: comment_votes_path(comment) do |f| %>
+        <%= f.hidden_field :vote_type, value: "downvote" %>
+
+        <%= f.submit 'downvote', class: 'downvote'%>
+    <% end %>
+</div>

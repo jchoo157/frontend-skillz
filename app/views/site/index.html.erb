@@ -1,16 +1,9 @@
-<h1>Frontend Skilz</h1>
+<h1>Frontend Skillz</h1>
 
 <div id="comments">
-  <% @comments.each do |comment| %>
-    <p><%= comment.votes.count %>|
-      <%= form_for @post.upvotes.build do |f| %>
-        <%= f.hidden_field :user, value: current_user %>
-        <%= f.submit 'Upvote', class: 'upvote-submit' %>
-      <% end %>
-      
-      <%= comment.body %>
-    </p>
+  <% @comments.reverse.each do |comment| %>
+    <%= render partial: 'partials/comment', locals: {comment: comment} %>
   <% end %>
-  <h1>Say something</h1>
-  <%= render partial: 'partials/form' %>
+  <h3>Say something</h3>
+    <%= render partial: 'partials/form', locals: {comment: @comment} %>
 </div>
