@@ -1,18 +1,22 @@
 <div class="vote">
-    <p class="points"><%= comment.votes.reduce(0) {|total, vote| vote.vote_type == "upvote" ? total + 1 : total - 1} %>
+    <div class="float-left">
 
-    <%= form_for Vote.new, url: comment_votes_path(comment) do |f| %>
-        <%= f.hidden_field :vote_type, value: "upvote" %>
-
-        <%= button_tag(type: 'submit', class: "btn btn-default upvote") do %>
-      <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
-<% end %>
-    <% end %>
-    <%= form_for Vote.new, url: comment_votes_path(comment) do |f| %>
-        <%= f.hidden_field :vote_type, value: "downvote" %>
-
-        <%= button_tag(type: 'submit', class: "btn btn-default downvote") do %>
-      <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+      <%= form_for Vote.new, url: comment_votes_path(comment) do |f| %>
+          <%= f.hidden_field :vote_type, value: "upvote" %>
+          <%= button_tag(type: 'submit', class: "btn btn-default upvote") do %>
+            <span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+          <% end %>
       <% end %>
-    <% end %>
+
+      <p class="points"><%= comment.votes.reduce(0) {|total, vote| vote.vote_type == "upvote" ? total + 1 : total - 1} %></p>
+
+      <%= form_for Vote.new, url: comment_votes_path(comment) do |f| %>
+          <%= f.hidden_field :vote_type, value: "downvote" %>
+
+          <%= button_tag(type: 'submit', class: "btn btn-default downvote") do %>
+        <span class="glyphicon glyphicon-thumbs-down" aria-hidden="true"></span>
+        <% end %>
+      <% end %>
+
+    </div>
 </div>

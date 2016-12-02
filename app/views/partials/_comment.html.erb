@@ -5,7 +5,8 @@
     </div>
   </p>
   <p>
-    <%= link_to 'delete', comment_path(comment), class: 'delete-comment', method: :delete, remote: true %>
-    <%= link_to 'edit', edit_comment_path(comment), class: 'edit-comment' %>
+    <%= link_to '<i class="glyphicon glyphicon-trash"></i> Delete'.html_safe, comment_path(comment), class: 'delete-comment btn btn-default', method: :delete, remote: true %>
+
+    <%= link_to '<i class="glyphicon glyphicon-pencil"></i> Edit'.html_safe, edit_comment_path(comment), class: 'edit-comment btn btn-default' %>
   </p>
 </div>

@@ -17,8 +17,11 @@ function upvote() {
       data: data
     })
     .done(function(result) {
-      var points = $(result).children('.points');
-      $(that).parent().parent().find('.points').replaceWith(points);
+      var points = $(result).find('.vote');
+      console.log(points);
+      $(that).parent().parent().replaceWith(result);
+      // $(that).parent().switchClass('btn-default', 'btn-success');
+      // $(that).parent().find('.points').replaceWith(points);
     });
   });
 }
@@ -37,8 +40,9 @@ function downvote() {
       data: data
     })
     .done(function(result) {
-      var points = $(result).children('.points');
-      $(that).parent().parent().find('.points').replaceWith(points);
+      var points = $(result).find('.vote');
+      console.log(points);
+      $(that).parent().parent().replaceWith(result);
     });
   });
 }
