@@ -1,8 +1,12 @@
 #comments {
-  float: left;
-  border: 1px solid #828282;
-  width: 200px;
+  display: inline-block;
+  width: 300px;
   margin: 20px;
+  text-align: center;
+}
+
+.h2comments {
+  font-family: 'Monda', sans-serif;
 }
 
 .maven {
@@ -10,12 +14,19 @@
 }
 
 .comment {
+  background-color: #eae8e8;
+  padding: 5px;
+  border-radius: 5px;
   text-align: center;
   font-family: 'Maven Pro', sans-serif;
 }
 
 .a-comment {
+  margin-top: 5px;
   padding: 5px;
+  background-color: #dddddd;
+  border-radius: 5px;
+  margin-bottom: 5px;
 }
 
 .comment-body {

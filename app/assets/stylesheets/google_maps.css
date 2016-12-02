@@ -1,0 +1,10 @@
+#map {
+    height: 400px;
+    width: 300px;
+      }
+
+.googlemaps {
+  margin-top: 20px;
+  vertical-align: top;
+    display: inline-block;
+}
