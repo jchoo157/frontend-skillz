@@ -11,6 +11,9 @@
 
 }
 
+.ruby {
+}
+
 .content {
   margin-top: -20px;
   padding-top: 50px;
@@ -19,15 +22,23 @@
 .h1-projects {
   width: 300px;
   font-size: 50px;
-  background-color: #FCF7F4;
+  background-color: #f9f7f7;
+  color: white;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #888888;;
+  box-shadow: 5px 5px 5px #bcaca4;
+  text-shadow: 2px 2px #af9483;
+}
+
+.h1-projects:hover {
+  color: white;
+  background-color: #f9f7f7;
+  text-shadow: 4px 4px #af9483;
 }
 
 .grid {
   background-color: #fcf7f4;
-  box-shadow: 5px 5px 5px #888888;;
+  box-shadow: 5px 5px 5px #bcaca4;;
   border-radius: 8px;
   padding: 20px;
 }
