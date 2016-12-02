@@ -2,8 +2,7 @@ class SiteController < ApplicationController
   def index
     @comment = Comment.new
     @comments = Comment.all
-    @vote = Vote.new
-    @votes = Vote.all
+    @vote = @comment.votes.new
   end
 
   def show

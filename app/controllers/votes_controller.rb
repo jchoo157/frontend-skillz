@@ -3,15 +3,21 @@ class VotesController < ApplicationController
   end
 
   def new
-    comment = Comment.find(params[:id])
-    @vote = comment.vote.new
+    p "*-*_" * 100
+    comment = Comment.find(params[:comment_id])
+    @vote = comment.votes.new
   end
 
   def create
-    comment = Comment.find(params[:id])
+    comment = Comment.find(params[:comment_id])
+    p "8_0f" * 200
     @vote = comment.votes.new(vote_params)
     if @vote.save
-      redirect_to root_path
+      if request.xhr?
+        render partial: 'partials/vote', locals: {comment: comment}, layout: false
+      else
+        redirect_to root_path
+      end
     end
   end
 
@@ -27,6 +33,6 @@ class VotesController < ApplicationController
   private
 
   def vote_params
-    params.require(:vote).permit(:vote_type)
+    params.require(:vote).permit(:vote_type, :comment_id)
   end
 end
