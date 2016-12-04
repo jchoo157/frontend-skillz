@@ -1,6 +1,7 @@
 $(document).ready(function() {
   createComment();
   deleteComment();
+  editComment();
 })
 
 function createComment() {
@@ -38,3 +39,10 @@ function deleteComment() {
     });
   });
 };
+
+function editComment() {
+  $('#comments').on('click', '.edit', function(e) {
+    e.preventDefault();
+    
+  })
+}

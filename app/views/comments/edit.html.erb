@@ -1,2 +1,21 @@
-<h1>Comments#edit</h1>
-<p>Find me in app/views/comments/edit.html.erb</p>
+<div class="a-comment">
+    <div class="edit">
+  <h4>Edit Comment</h4>
+  <center><%= form_for @comment do |f| %>
+    <p>
+      <%= f.text_area :body, class: "text-area", cols: "50", rows: "5" %>
+    </p>
+
+    <p>
+      <%= button_tag(type: 'submit', class: "btn btn-default submit-comment") do %>
+            <i class="glyphicon glyphicon-comment"></i> Submit
+      <% end %>
+    </p>
+  <% end %></center>
+</div>
+  </p>
+  <p>
+    <%= link_to '<i class="glyphicon glyphicon-trash"></i> Delete'.html_safe, comment_path(@comment), class: 'delete-comment btn btn-default', method: :delete, remote: true %>
+
+  </p>
+</div>
