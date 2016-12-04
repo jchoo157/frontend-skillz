@@ -6,6 +6,10 @@
   list-style: none;
 }
 
+.merri {
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
 .slide {
   background-color: red;
   padding: 1px;
