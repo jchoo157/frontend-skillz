@@ -10,10 +10,10 @@ class VotesController < ApplicationController
 
   def create
     comment = Comment.find(params[:comment_id])
-    p "8_0f" * 200
     @vote = comment.votes.new(vote_params)
     if @vote.save
       if request.xhr?
+        p "*-_" * 500
         render partial: 'partials/vote', locals: {comment: comment}, layout: false
       else
         redirect_to root_path

@@ -5,7 +5,7 @@
 
 
         <%= image_tag('jchoo.png', class: 'jchoo') %>
-        <h2 class="slab" style="color: #f2f2f2">Johnny <span style="color: #fdffa8">Choo</span></h2><br>
+        <h2 class="slab name" style="color: #f2f2f2">Johnny <span style="color: #fdffa8">Choo</span></h2><br>
         <h3 class="m"><span class="fs">Full Stack</span> <span class="wd">Web Developer</span></h3>
         <br>
         <h5 class="light-blue maven">I have a passion for web development and always <br>eager to work on new projects and learn new technologies</h5>
@@ -19,6 +19,7 @@
 
 <center>
 
+<div id="content">
 <div class="content">
   <h1 class="maven h1-projects">Projects</h1>
   <div class="grid">
@@ -90,6 +91,10 @@
   </div>
 </div>
 
+<div id="skillz">
+
+</div>
+
 <div id="comments-section">
   <div id="comments">
     <center><h1 class="maven h1-comments">Comments</h1></center>
@@ -100,6 +105,7 @@
         <%= render partial: 'partials/form', locals: {comment: @comment} %>
       </div>
   </div>
+</div>
 </div>
 
 <!-- 
