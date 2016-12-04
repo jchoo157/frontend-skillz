@@ -18,9 +18,23 @@ class CommentsController < ApplicationController
   end
 
   def edit
+    @comment = Comment.find(params[:id])
+    if request.xhr?
+      render 'comments/edit', layout: false
+    end
   end
 
   def update
+    @comment = Comment.find(params[:id])
+    if @comment.update_attributes(comment_params)
+      if request.xhr?
+        render partial: 'partials/comment', locals: {comment: @comment}, layout: false
+      else
+        redirect_to root_path
+      end
+    else
+      redirect_to root_path
+    end
   end
 
   def destroy
