@@ -11,6 +11,10 @@
 
 }
 
+.bungee {
+  font-family: 'Bungee', cursive;
+}
+
 .content:before {
    content: "";
     height: 1px;
