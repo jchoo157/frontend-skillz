@@ -7,7 +7,7 @@ $(document).ready(function() {
 
   $("#scroll2").click(function() {
     $('html, body').animate({
-        scrollTop: $("#content").offset().top
+        scrollTop: $(".h1-projects").offset().top
     }, 2000);
   });
 
@@ -22,5 +22,15 @@ $(document).ready(function() {
         scrollTop: $("#comments-section").offset().top
     }, 2000);
   });
-})
+
+  window.addEventListener("scroll",function() { 
+     if(window.scrollY > 500) {
+        $('.grid').slideDown();
+     }
+     else {
+        $('.grid').slideUp();
+     }
+  },false);
+
+});
 

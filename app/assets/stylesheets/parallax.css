@@ -197,7 +197,13 @@
   text-align: center;
 }
 
-
+/* CSS - Slide 2 */
+#slide-2 .bcg {
+    background: none;
+    background-color: #010101;
+    height: 310px;
+    text-align: center
+}
 /* CURTAIN */
 
 /* Slide 4 */
@@ -216,4 +222,6 @@
     bottom: 30%; left: 0;
     width: 100%; text-align: center;
 }
-#slide-4 .bcg2 {background-image:url('mountain.jpg');}
+#slide-4 .bcg2a {background-image:url('mountain.jpg');}
+
+/* Slide 5 */
