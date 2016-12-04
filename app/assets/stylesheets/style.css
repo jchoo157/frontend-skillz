@@ -53,7 +53,7 @@
 }
 
 .grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.1); z-index: 1; background-color: #7ffaff;}
+.grow:hover { transform: scale(1.2); z-index: 1; border: 5px solid white; border-radius: 8px;}
 
 .h1-projects:hover {
   color: white;
@@ -62,7 +62,6 @@
 
 .grid {
   background-color: #fcf7f4;
-  box-shadow: 5px 5px 5px #bcaca4;
   border-radius: 8px;
-  padding: 20px;
+  padding: 5px;
 }
