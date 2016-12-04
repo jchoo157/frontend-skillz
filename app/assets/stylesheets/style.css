@@ -16,7 +16,7 @@
 
 .content {
   margin-top: -20px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .h1-projects {
@@ -38,7 +38,7 @@
 
 .grid {
   background-color: #fcf7f4;
-  box-shadow: 5px 5px 5px #bcaca4;;
+  box-shadow: 5px 5px 5px #bcaca4;
   border-radius: 8px;
   padding: 20px;
 }
