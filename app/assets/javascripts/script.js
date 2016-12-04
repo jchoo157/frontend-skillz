@@ -1,17 +1,25 @@
-window.scroll({
-  top: 2500, 
-  left: 0, 
-  behavior: 'smooth' 
-});
+$(document).ready(function() {
+  $("#scroll1").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#slide-1").offset().top
+    }, 2000);
+  });
 
-// Scroll certain amounts from current position 
-window.scrollBy({ 
-  top: 100, // could be negative value
-  left: 0, 
-  behavior: 'smooth' 
-});
+  $("#scroll2").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#content").offset().top
+    }, 2000);
+  });
 
-// Scroll to a certain element
-document.querySelector('#content').scrollIntoView({ 
-  behavior: 'smooth' 
-});
+  $("#scroll3").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#skillz").offset().top
+    }, 2000);
+  });
+
+  $("#scroll4").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#comments-section").offset().top
+    }, 2000);
+  });
+})
