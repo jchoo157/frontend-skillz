@@ -11,6 +11,30 @@
 
 }
 
+.content:before {
+   content: "";
+    height: 1px;
+    /* I've removed the vendor prefixes, if you are looking to support older browsers
+       then refer to older version of this answer.
+    */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.content:after {
+   content: "";
+    height: 1px;
+    /* I've removed the vendor prefixes, if you are looking to support older browsers
+       then refer to older version of this answer.
+    */
+    background: linear-gradient(to right,  rgba(0,0,0,0) 0%,rgba(147,147,147,1) 50%,rgba(0,0,0,0) 100%);
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
 .ruby {
 }
 
@@ -22,13 +46,14 @@
 .h1-projects {
   width: 300px;
   font-size: 50px;
-  background-color: #f9f7f7;
   color: white;
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 5px 5px 5px #bcaca4;
   text-shadow: 2px 2px #af9483;
 }
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); z-index: 1; background-color: #7ffaff;}
 
 .h1-projects:hover {
   color: white;
