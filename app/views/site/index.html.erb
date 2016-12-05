@@ -105,14 +105,14 @@
 <div id="skillz">
     <div>
       <h5 style="color: #7f7f7f">Contact</h5>
-      <h1 class="maven" style="margin-bottom: 20px;"><span style="color: #3567ff">jchoo156</span><span style="color:#35c5ff">@</span><span style="color: #35fff8">gmail</span><span style="color:#35FFF8">.</span><span style="color: #35ff90">com</span></h1>
+      <h1 class="maven" style="margin-bottom: 20px; text-shadow: 2px 2px black;"><span style="color: #3567ff">jchoo156</span><span style="color:#35c5ff">@</span><span style="color: #35fff8">gmail</span><span style="color:#35FFF8">.</span><span style="color: #35ff90">com</span></h1>
     </div>
 
     <div style="padding-bottom: 20px;">
       <%= link_to "Download Resume", download_pdf_path, class: 'btn btn-info pdf', role: 'button' %>
     </div>
 
-  <div class="skillsbg">
+  <div class="skillsbg" style="text-shadow: 2px 2px black;">
       <div id="proficient">
         <h3>Proficient</h3>
           <div class='rails'>
@@ -139,6 +139,16 @@
           <div class='html'>
             <h4>HTML</h4>
             <%= image_tag('html.png', class: 'skill-img') %>
+          </div>
+
+          <div class='git'>
+            <h4>Git</h4>
+            <%= image_tag('git.jpg', class: 'skill-img') %>
+          </div>
+
+          <div class='photoshop'>
+            <h4>Photoshop</h4>
+            <%= image_tag('photoshop.png', class: 'skill-img') %>
           </div>
       </div>
 
