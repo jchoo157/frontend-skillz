@@ -23,6 +23,14 @@ $(document).ready(function() {
     }, 2000);
   });
 
+  $('#menu').click(function(e){
+    e.stopPropagation();
+  });
+
+  $("#menu").click(function(){
+     $(this).toggleClass("selected");
+  });
+
   window.addEventListener("scroll",function() { 
      if(window.scrollY > 500) {
         $('.grid').slideDown();
