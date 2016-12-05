@@ -69,3 +69,19 @@
   border-radius: 8px;
   padding: 5px;
 }
+
+.my-links {
+  margin-bottom: 20px;
+}
+
+.my-icons {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  opacity: 0.9;
+  margin: 10px;
+}
+
+.my-icons:hover {
+  opacity: 1;
+}
