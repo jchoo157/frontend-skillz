@@ -5,31 +5,35 @@
   padding: 5px;
 }
 
+.pdf {
+  color: white;
+  margin-bottom: 20px;
+}
+
 #proficient {
-  padding-right: 50px;
+  color: #e8e8d7;
   float: left;
   width: 50%;
   border-right: 1px solid #babfc4;
 }
 
 #exposure {
+  color: #dbe8da;
   float: right;
   width: 50%;
 }
 
 #skillz {
-  background-color: #f2f2f2;
   padding-top: 100px;
   padding-bottom: 100px;
 }
 
 .skillsbg {
-  background-color: white;
   display: inline-block;
-  padding: 80px;
   width: 90%;
   box-shadow: 0px 30px 40px rgba(0,0,0,.1);
-
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 #proficient img {
@@ -44,7 +48,7 @@
   border-radius: 5px;
   font-family: 'News Cycle', sans-serif;
   display: inline-block;
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
   padding: 10px;
   margin: 5px;
   color: #bfbfbf;
@@ -54,7 +58,7 @@
   border-radius: 5px;
   font-family: 'News Cycle', sans-serif;
   display: inline-block;
-  background-color: #f2f2f2;
+  /*background-color: #f2f2f2;*/
   padding: 10px;
   color: #bfbfbf;
   margin: 5px;

@@ -40,7 +40,7 @@
 
   <div class="grid">
     <figure class="effect-lily grow">
-      <%= link_to image_tag('art-gallery.png', class: 'art-slide'), 'https://choo-art-gallery.herokuapp.com' %>
+      <%= link_to image_tag('art-gallery.png', class: 'art-slide child'), 'https://choo-art-gallery.herokuapp.com' %>
       <figcaption>
         <div>
           <h2>Art <span>Gallery</span></h2>
@@ -101,9 +101,18 @@
 
 
 <center>
+<div class="parallax3">
 <div id="skillz">
+    <div>
+      <h5 style="color: #788BA2">Contact</h5>
+      <h1 class="maven" style="margin-bottom: 20px; text-shadow: 2px 2px black;"><span style="color: #EFF1F3">jchoo156</span><span style="color:#DBD3D8">@</span><span style="color: #D8B4A0">gmail</span><span style="color:#D77A61">.</span><span style="color: #d65939">com</span></h1>
+    </div>
 
-  <div class="skillsbg">
+    <div style="padding-bottom: 20px;">
+      <%= link_to "Download Resume", download_pdf_path, class: 'btn btn-info pdf', role: 'button' %>
+    </div>
+
+  <div class="skillsbg" style="text-shadow: 2px 2px black;">
       <div id="proficient">
         <h3>Proficient</h3>
           <div class='rails'>
@@ -131,6 +140,21 @@
             <h4>HTML</h4>
             <%= image_tag('html.png', class: 'skill-img') %>
           </div>
+
+          <div class='git'>
+            <h4>Git</h4>
+            <%= image_tag('git.jpg', class: 'skill-img') %>
+          </div>
+
+          <div class='photoshop'>
+            <h4>Photoshop</h4>
+            <%= image_tag('photoshop.png', class: 'skill-img') %>
+          </div>
+
+          <div class='league'>
+            <h4>League of Legends</h4>
+            <%= image_tag('league.png', class: 'skill-img') %>
+          </div>
       </div>
 
       <div id="exposure">
@@ -145,9 +169,13 @@
         </div>
       </div>
     </div>
+    <br>
+    
  
 </div>
+</div>
 
+<div class="parallax2">
 <div id="comments-section">
   <div id="comments">
     <center><h1 class="bungee h1-comments">Comments</h1></center>
@@ -158,6 +186,7 @@
         <%= render partial: 'partials/form', locals: {comment: @comment} %>
       </div>
   </div>
+</div>
 </div>
 </div>
 </center>
