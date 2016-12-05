@@ -16,7 +16,15 @@
 }
 
 #menu > li {
-  background-color: white;
-  padding: 4px;
+  text-align: center;
+  text-shadow: 2px 2px black;
+  color: white;
+  margin-right: 20px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+#menu > li:hover {
+  text-shadow: 2px 2px black;
+  color: #f9ff5b;
 }
