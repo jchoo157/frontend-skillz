@@ -67,6 +67,10 @@
   backface-visibility: hidden;
 }
 
+.jochoo {
+  border-radius: 50%;
+}
+
 .grid figure figcaption::before,
 .grid figure figcaption::after {
   pointer-events: none;
