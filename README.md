@@ -1,24 +1,25 @@
-# README
+# Personal Website
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Website created to showcase projects I've done and technologies I've learned.
 
-Things you may want to cover:
+You can check out the live version [here](https://johnnychoo.herokuapp.com/).
 
-* Ruby version
+## Website
 
-* System dependencies
+![signup](https://github.com/jchoo157/league_stats/blob/master/app/assets/images/personalsite.gif)
 
-* Configuration
+## Comments
 
-* Database creation
+![comments](https://github.com/jchoo157/league_stats/blob/master/app/assets/images/personalsite-comments.gif)
 
-* Database initialization
+## Tech Used
 
-* How to run the test suite
+* [Ruby on Rails](http://api.rubyonrails.org/) - Backend API framework used
+* [jQuery](https://jquery.com/) - Write less, do more with jQuery
+* [Ajax](https://developer.mozilla.org/en-US/docs/AJAX/Getting_Started) -The use of the XMLHttpRequest object to communicate with server-side scripts.
+* [Javascript](https://)
 
-* Services (job queues, cache servers, search engines, etc.)
+## Author
 
-* Deployment instructions
+* **Johnny Choo** - [Github](https://github.com/jchoo157)
 
-* ...
