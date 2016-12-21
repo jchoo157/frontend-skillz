@@ -6,11 +6,11 @@ You can check out the live version [here](https://johnnychoo.herokuapp.com/).
 
 ## Website
 
-![signup](https://github.com/jchoo157/league_stats/blob/master/app/assets/images/personalsite.gif)
+![signup](https://github.com/jchoo157/johnny-choo-website/blob/master/app/assets/images/personalsite.gif)
 
 ## Comments
 
-![comments](https://github.com/jchoo157/league_stats/blob/master/app/assets/images/personalsite-comments.gif)
+![comments](https://github.com/jchoo157/johnny-choo-website/blob/master/app/assets/images/personalsite-comments.gif)
 
 ## Tech Used
 
